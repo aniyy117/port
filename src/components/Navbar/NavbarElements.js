@@ -3,8 +3,11 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: #0a0b09;
+  @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@500&display=swap");
+  font-family: "Encode Sans Expanded", sans-serif;
+  background: ${({ scrollNav }) => (scrollNav ? "transparent" : "#000")};
   height: 80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +15,6 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-
   @media screen and (max-width: 960) {
     transition: 0.8s all ease;
   }
@@ -55,9 +57,6 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
-    &:hover {
-      color: #b4190a;
-    }
   }
 `;
 
@@ -87,18 +86,13 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    color: #b4190a;
+    border-bottom: 3px solid red;
   }
 `;
 
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  margin-right: 24px;
-
-  /* Third Nav */
-  /* justify-content: flex-end;
-  width: 100vw; */
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -107,18 +101,15 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   font-family: "Encode Sans Expanded", sans-serif;
-  border-radius: 4px;
+  border-radius: 50px;
   background: #b4190a;
-  padding: 15px 30px;
+  padding: 15px 40px;
   color: #fff;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-
-  /* Second Nav */
-  margin-left: 24px;
 
   &:hover {
     transition: all 0.2s ease-in-out;
