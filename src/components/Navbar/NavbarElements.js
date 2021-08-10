@@ -3,14 +3,10 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@500&display=swap");
-  font-family: "Encode Sans Expanded", sans-serif;
-  background: #060708;
+  background: #0a0b09;
   height: 80px;
-  /* margin-top: -80px;*/
   display: flex;
-  justify-content: space-between;
-  padding: 0rem calc((90vw - 1000px) / 2);
+  justify-content: center;
   align-items: center;
   font-size: 1rem;
   position: sticky;
