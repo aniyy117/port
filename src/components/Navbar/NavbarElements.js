@@ -5,7 +5,7 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@500&display=swap");
   font-family: "Encode Sans Expanded", sans-serif;
-  background: ${({ scrollNav }) => (scrollNav ? "transparent" : "#000")};
+  background: #0a0b09;
   height: 80px;
   margin-top: -80px;
   display: flex;
