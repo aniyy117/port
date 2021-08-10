@@ -28,7 +28,9 @@ export const AboutContent = styled.div`
   }
 `;
 
-export const AboutImg = styled.div``;
+export const AboutImg = styled.div`
+  diplay: block;
+`;
 
 export const Img = styled.img`
   width: 90vh;
