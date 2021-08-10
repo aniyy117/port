@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Hero from "../HeroPage/Hero";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
-import About from "../About/About";
+
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +15,6 @@ function Home() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Hero />
-      <About />
     </div>
   );
 }
