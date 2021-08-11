@@ -13,7 +13,7 @@ export const AboutTitle = styled.h1`
   font-size: 3.5rem;
   text-align: center;
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 `;
 
@@ -35,14 +35,13 @@ export const AboutImg = styled.div`
 export const Img = styled.img`
   width: 90vh;
   height: auto;
+  border-radius: 20px;
+  box-shadow: 10px 7px 1px red;
   @media screen and (max-width: 1024px) {
-    width: 40vh;
+    width: 100%;
   }
   @media screen and (max-width: 768px) {
-    width: 40vh;
-  }
-  @media screen and (max-width: 480px) {
-    width: 40vh;
+    width: 100%;
   }
 `;
 

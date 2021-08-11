@@ -25,6 +25,10 @@ export const HeroContainer = styled.div`
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
   }
+
+  @media screen and (max-width: 768px) {
+    height: 600px;
+  }
 `;
 
 export const HeroBg = styled.div`
@@ -61,7 +65,7 @@ export const HeroH1 = styled.h1`
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 `;
 
