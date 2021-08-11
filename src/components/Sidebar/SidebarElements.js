@@ -4,8 +4,6 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const SidebarContainer = styled.aside`
-  @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-  font-family: "Permanent Marker", cursive;
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -41,7 +39,7 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 100px);
+  grid-template-rows: repeat(6, 80px);
   text-align: center;
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(4, 60px);
@@ -71,18 +69,17 @@ export const SideBtnWrap = styled.div`
 `;
 
 export const SideBarRoute = styled(LinkR)`
-  border-radius: 4px;
+  border-radius: 50px;
   background: #b4190a;
-  padding: 15px 30px;
+  white-space: nowrap;
+  padding: 15px 50px;
   color: #fff;
+  font-size: 16px;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-
-  /* Second Nav */
-  margin-left: 24px;
 
   &:hover {
     transition: all 0.2s ease-in-out;

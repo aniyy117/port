@@ -3,8 +3,6 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@500&display=swap");
-  font-family: "Encode Sans Expanded", sans-serif;
   background: #0a0b09;
   height: 80px;
   margin-top: -80px;
@@ -37,7 +35,7 @@ export const NavLogo = styled(LinkR)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  margin-left: 10px;
   font-weight: bold;
   text-decoration: none;
   @media screen and (max-width: 768px) {
@@ -100,11 +98,12 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  font-family: "Encode Sans Expanded", sans-serif;
   border-radius: 50px;
   background: #b4190a;
+  white-space: nowrap;
   padding: 15px 40px;
   color: #fff;
+  font-size: 16px;
   outline: none;
   border: none;
   cursor: pointer;
