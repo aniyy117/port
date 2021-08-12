@@ -27,9 +27,9 @@ function Sidebar({ isOpen, toggle }) {
           <SidebarLink to="service" onClick={toggle}>
             Services
           </SidebarLink>
-          <SidebarLink to="skills" onClick={toggle}>
+          {/*<SidebarLink to="skills" onClick={toggle}>
             Skills
-          </SidebarLink>
+  </SidebarLink>*/}
         </SidebarMenu>
         <SideBtnWrap>
           <SideBarRoute to="/hireme">Hire Me !</SideBarRoute>

@@ -3,6 +3,8 @@ import Hero from "../HeroPage/Hero";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 import About from "../About/About";
+import Service from "../Serv/Service";
+import Footer from "../Footer/Footer";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +19,8 @@ function Home() {
       <Navbar toggle={toggle} />
       <Hero />
       <About />
+      <Service />
+      <Footer />
     </div>
   );
 }

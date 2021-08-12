@@ -5,13 +5,14 @@ export const AboutContainer = styled.div`
   diplay: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 30px 30px;
+  padding: 50px 30px;
 `;
 
 export const AboutTitle = styled.h1`
   color: #fff;
   font-size: 3.5rem;
   text-align: center;
+  padding-top: 30px;
   @media screen and (max-width: 768px) {
     font-size: 1.7rem;
   }
