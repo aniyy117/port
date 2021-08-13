@@ -1,12 +1,20 @@
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/pages/Home";
+import Hire from "./components/pages/Hire";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Home />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/hireme">
+            <Hire />
+          </Route>
+        </Switch>
       </Router>
     </div>
   );

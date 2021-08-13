@@ -18,7 +18,7 @@ function Hero() {
       <HeroContent>
         <HeroH1>Hello.I'm a Frontend Developer</HeroH1>
         <HeroP>
-          My name's Aniket Jadhav. I craft user interface using mordern frontend
+          My name's Aniket Jadhav. I craft user interface using modern frontend
           web technologies
         </HeroP>
       </HeroContent>

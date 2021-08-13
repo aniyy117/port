@@ -18,7 +18,7 @@ function Service() {
   return (
     <>
       <ServiceContainer id="service">
-        <ServiceH1>My Service</ServiceH1>
+        <ServiceH1>My Services</ServiceH1>
         <ServiceWapper>
           <ServiceCard>
             <ServiceIcon src={Icon1} />
