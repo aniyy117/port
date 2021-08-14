@@ -25,18 +25,15 @@ function Service() {
             <ServiceH2>Full Stack Development</ServiceH2>
             <ServiceP>
               {" "}
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-              ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-              Lorem ipsum
+              I can work on full stack project(Frontend + Backend) from scratch.
             </ServiceP>
           </ServiceCard>
           <ServiceCard>
             <ServiceIcon src={Icon2} />
             <ServiceH2>Responsive web design</ServiceH2>
             <ServiceP>
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-              ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-              Lorem ipsum
+              I can develop Responsive Web Designs using latest Frontend
+              technologies
             </ServiceP>
           </ServiceCard>
           <ServiceCard>
@@ -44,9 +41,8 @@ function Service() {
             <ServiceH2>Wordpress Solutions</ServiceH2>
             <ServiceP>
               {" "}
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-              ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-              Lorem ipsum
+              I also provide WordPress Solutions. I can work on your WordPress
+              Projects from Scratch.
             </ServiceP>
           </ServiceCard>
           <ServiceCard>
@@ -54,9 +50,8 @@ function Service() {
             <ServiceH2>Android Applications</ServiceH2>
             <ServiceP>
               {" "}
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-              ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-              Lorem ipsum
+              I can also develop Fully Featured Android Apps using Java and
+              Android Studio.
             </ServiceP>
           </ServiceCard>
         </ServiceWapper>
