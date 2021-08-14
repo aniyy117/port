@@ -14,6 +14,9 @@ import {
 
 import { db } from "./Firebase/Firebase";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function FormFile() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -22,10 +25,6 @@ function FormFile() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const alertMsg = () => {
-      alert("Message has been Submitted");
-    };
-
     db.collection("contacts")
       .add({
         name: name,
@@ -33,10 +32,26 @@ function FormFile() {
         msg: msg,
       })
       .then(() => {
-        alertMsg();
+        toast.success("Message has been Submitted", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       })
       .catch((error) => {
-        alert(error.message);
+        toast.error(error.message, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       });
 
     setName("");
@@ -78,6 +93,7 @@ function FormFile() {
           </FormContent>
         </FormWrapper>
       </Container>
+      <ToastContainer />
     </>
   );
 }
