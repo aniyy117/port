@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   ServiceContainer,
   ServiceWapper,
@@ -9,18 +9,24 @@ import {
   ServiceIcon,
 } from "./ServiceElement";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import Icon1 from "../images/Icon1.svg";
 import Icon2 from "../images/icon2.svg";
 import Icon3 from "../images/Icon3.svg";
 import Icon4 from "../images/icon4.svg";
 
 function Service() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <>
       <ServiceContainer id="service">
-        <ServiceH1>My Services</ServiceH1>
+        <ServiceH1 data-aos="fade-up">My Services</ServiceH1>
         <ServiceWapper>
-          <ServiceCard>
+          <ServiceCard data-aos="fade-right">
             <ServiceIcon src={Icon1} />
             <ServiceH2>Full Stack Development</ServiceH2>
             <ServiceP>
@@ -28,7 +34,7 @@ function Service() {
               I can work on full stack project(Frontend + Backend) from scratch.
             </ServiceP>
           </ServiceCard>
-          <ServiceCard>
+          <ServiceCard data-aos="fade-left">
             <ServiceIcon src={Icon2} />
             <ServiceH2>Responsive web design</ServiceH2>
             <ServiceP>
@@ -36,7 +42,7 @@ function Service() {
               technologies
             </ServiceP>
           </ServiceCard>
-          <ServiceCard>
+          <ServiceCard data-aos="fade-right">
             <ServiceIcon src={Icon3} />
             <ServiceH2>Wordpress Solutions</ServiceH2>
             <ServiceP>
@@ -45,7 +51,7 @@ function Service() {
               Projects from Scratch.
             </ServiceP>
           </ServiceCard>
-          <ServiceCard>
+          <ServiceCard data-aos="fade-left">
             <ServiceIcon src={Icon4} />
             <ServiceH2>Android Applications</ServiceH2>
             <ServiceP>

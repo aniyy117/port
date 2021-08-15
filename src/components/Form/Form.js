@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   FormWrapper,
@@ -12,12 +12,25 @@ import {
   FormButton,
 } from "./FormElements";
 
+/*Animation */
+import Aos from "aos";
+import "aos/dist/aos.css";
+/*Animation */
+
+/*Database */
 import { db } from "./Firebase/Firebase";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function FormFile() {
+  /*Animation */
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+  /*Animation */
+
+  /*Database */
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
@@ -58,13 +71,15 @@ function FormFile() {
     setEmail("");
     setMsg("");
   };
-
+  /*Database */
   return (
     <>
       <Container>
         <FormWrapper>
-          <Icon to="/">Http.DittoSays</Icon>
-          <FormContent>
+          <Icon to="/" data-aos="fade-up">
+            Http.DittoSays
+          </Icon>
+          <FormContent data-aos="fade-up">
             <Form onSubmit={handleSubmit}>
               <FormH1>Contact Form</FormH1>
               <FormLabel htmlFor="fro">Name</FormLabel>

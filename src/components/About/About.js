@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import myimg from "../images/myimage.jpeg";
 import {
   AboutContainer,
@@ -11,16 +11,27 @@ import {
   AboutP,
   Span,
 } from "./AboutElements";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function About() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <AboutContainer id="about" smooth={true} duration={500}>
-      <AboutTitle>About</AboutTitle>
+      <AboutTitle data-aos="fade-up">About</AboutTitle>
       <AboutContent>
-        <AboutImg>
+        <AboutImg
+          data-aos="zoom-in-right"
+          data-aos-anchor-placement="center-bottom"
+        >
           <Img src={myimg} alt="myimage" />
         </AboutImg>
-        <AboutMe>
+        <AboutMe
+          data-aos="zoom-in-left"
+          data-aos-anchor-placement="center-bottom"
+        >
           <AboutH2>
             Student, Programmer, Full Stack Developer, Content Creater
           </AboutH2>
