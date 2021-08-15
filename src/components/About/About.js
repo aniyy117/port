@@ -22,16 +22,10 @@ function About() {
     <AboutContainer id="about" smooth={true} duration={500}>
       <AboutTitle data-aos="fade-up">About</AboutTitle>
       <AboutContent>
-        <AboutImg
-          data-aos="zoom-in-right"
-          data-aos-anchor-placement="center-bottom"
-        >
+        <AboutImg data-aos="fade-up">
           <Img src={myimg} alt="myimage" />
         </AboutImg>
-        <AboutMe
-          data-aos="zoom-in-left"
-          data-aos-anchor-placement="center-bottom"
-        >
+        <AboutMe data-aos="fade-up">
           <AboutH2>
             Student, Programmer, Full Stack Developer, Content Creater
           </AboutH2>

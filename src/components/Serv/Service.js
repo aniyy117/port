@@ -26,7 +26,7 @@ function Service() {
       <ServiceContainer id="service">
         <ServiceH1 data-aos="fade-up">My Services</ServiceH1>
         <ServiceWapper>
-          <ServiceCard data-aos="fade-right">
+          <ServiceCard data-aos="fade-up">
             <ServiceIcon src={Icon1} />
             <ServiceH2>Full Stack Development</ServiceH2>
             <ServiceP>
@@ -34,7 +34,7 @@ function Service() {
               I can work on full stack project(Frontend + Backend) from scratch.
             </ServiceP>
           </ServiceCard>
-          <ServiceCard data-aos="fade-left">
+          <ServiceCard data-aos="fade-up">
             <ServiceIcon src={Icon2} />
             <ServiceH2>Responsive web design</ServiceH2>
             <ServiceP>
@@ -42,7 +42,7 @@ function Service() {
               technologies
             </ServiceP>
           </ServiceCard>
-          <ServiceCard data-aos="fade-right">
+          <ServiceCard data-aos="fade-up">
             <ServiceIcon src={Icon3} />
             <ServiceH2>Wordpress Solutions</ServiceH2>
             <ServiceP>
@@ -51,7 +51,7 @@ function Service() {
               Projects from Scratch.
             </ServiceP>
           </ServiceCard>
-          <ServiceCard data-aos="fade-left">
+          <ServiceCard data-aos="fade-up">
             <ServiceIcon src={Icon4} />
             <ServiceH2>Android Applications</ServiceH2>
             <ServiceP>
