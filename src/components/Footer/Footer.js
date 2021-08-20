@@ -22,7 +22,7 @@ function Footer() {
               href="https://www.instagram.com/http.aniyy/"
               target="_blank"
             >
-              Instgram
+              Instagram
             </FooterLinks>
             <FooterLinks
               href="https://www.linkedin.com/in/aniket-jadhav-847151157/"
